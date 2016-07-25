@@ -24,7 +24,7 @@ public class DecoderActivity extends Activity implements OnQRCodeReadListener,Di
   private QRCodeReaderView mydecoderview;
   private ImageView line_image;
   private GetDataDialog mGetDataDialog;
-  public static int dialogCounter=0; // not show more like one dialog
+  public static int dialogCounter=0; // not show more like one dialog.
 
   @OnClick (R.id.exit_BT) void stopCamera(){
     mydecoderview.getCameraManager().stopPreview();

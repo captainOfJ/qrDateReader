@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+                android:background="@color/White"
+    tools:context=".Control.Activity.MainActivity"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_reader"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/startQrReader_BT"
+        android:layout_gravity="center_horizontal" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btLinear"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/startQrReader_BT">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textStyle="bold"
+    android:textSize="22sp"
+    android:textColor="@color/ColorPrimaryDark"
+    android:text="QR DATE LIST"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:divider="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:id="@+id/qrDateList"
+        android:textColor="@color/text_colorPrimary"
+        android:stackFromBottom="false"
+        android:layout_marginTop="10dp"
+        android:transcriptMode="disabled"
+        android:dividerHeight="10.0sp"
+       />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/btLinear"
+    android:layout_marginBottom="5dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true">
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/format"
+        android:background="@drawable/button"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:id="@+id/format_BT"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+
+</RelativeLayout>
